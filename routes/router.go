@@ -21,5 +21,4 @@ func SetupRoutes(app *fiber.App) {
 	todoRouter.Get("/:id", handler.GetTodoByID)
 	todoRouter.Patch("/:id", handler.UpdateTodo)
 	todoRouter.Delete("/:id", handler.DeleteTodo)
-
 }

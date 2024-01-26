@@ -19,5 +19,4 @@ func main() {
 	router.SetupRoutes(app)
 
 	log.Fatal(app.Listen(fmt.Sprintf(":%d", port)))
-
 }

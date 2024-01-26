@@ -20,3 +20,12 @@ tidy:
 .PHONY: lint
 lint:
 	golangci-lint run ./...
+
+.PHONY: test
+test:
+	go test -v ./...
+
+.PHONY: coverage-test
+coverage-test:
+	go test -coverprofile=coverage.out ./...
+	go tool cover -html=coverage.out
