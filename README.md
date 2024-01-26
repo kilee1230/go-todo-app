@@ -33,5 +33,5 @@ docker build -t go-todo-app .
 To run the Docker image, use the following command:
 
 ```bash
-docker run -p 3000:3000 my-go-app
+docker run -p 3000:3000 go-todo-app
 ```
