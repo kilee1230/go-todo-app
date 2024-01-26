@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	"github.com/gofiber/fiber/v2"
@@ -17,5 +18,10 @@ func main() {
 		return c.Status(200).SendString("OK")
 	})
 
-	log.Fatal(app.Listen(":3000"))
+	var port int = 3000
+
+	log.Println(fmt.Sprintf("🚀 Server running at http://localhost:%d", port))
+
+	log.Fatal(app.Listen(fmt.Sprintf(":%d", port)))
+
 }

@@ -17,5 +17,5 @@ These instructions will get you a copy of the project up and running on your loc
 To run the application, use the following command:
 
 ```bash
-make run
+make run-dev
 ```
