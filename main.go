@@ -2,13 +2,18 @@ package main
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/log"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 )
 
 func main() {
 	app := fiber.New()
+
+	app.Use(
+		logger.New(), // add Logger middleware
+	)
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("go-todo-api is up and running!")
@@ -20,7 +25,7 @@ func main() {
 
 	var port int = 3000
 
-	log.Println(fmt.Sprintf("🚀 Server running at http://localhost:%d", port))
+	log.Info(fmt.Sprintf("🚀 Server running at http://localhost:%d", port))
 
 	log.Fatal(app.Listen(fmt.Sprintf(":%d", port)))
 
