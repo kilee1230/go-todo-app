@@ -19,3 +19,19 @@ To run the application, use the following command:
 ```bash
 make run-dev
 ```
+
+## Docker Build
+
+To build the Docker image, run the following command:
+
+```bash
+docker build -t go-todo-app .
+```
+
+## Docker Run
+
+To run the Docker image, use the following command:
+
+```bash
+docker run -p 3000:3000 my-go-app
+```
