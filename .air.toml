@@ -3,3 +3,10 @@ root = "."
 tmp_dir = "tmp"
 build_cmd = "go build -o ./tmp/main ."
 run_cmd = "./tmp/main"
+
+[color]
+  app = ""
+  build = "yellow"
+  main = "magenta"
+  runner = "green"
+  watcher = "cyan"
