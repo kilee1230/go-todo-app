@@ -2,7 +2,7 @@ module github.com/kilee1230/go-todo-app
 
 go 1.21
 
-require github.com/gofiber/fiber/v2 v2.52.6
+require github.com/gofiber/fiber/v2 v2.52.9
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
